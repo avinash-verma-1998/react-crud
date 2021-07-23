@@ -54,6 +54,12 @@ const CreatePost = () => {
         >
           Create Post
         </button>
+        <button
+          onClick={()=>{history.push(`/users/${id}`);}}
+          className="mt-5 button is-danger ml-4 is-large is-light"
+        >
+          Cancel
+        </button>
       </div>
     </>
   );

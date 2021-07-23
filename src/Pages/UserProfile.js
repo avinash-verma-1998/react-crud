@@ -18,7 +18,6 @@ const UserProfile = () => {
         setUser(data);
         getUserPosts(id).then((post) => {
           setPosts(post);
-          console.log(data, post);
           setIsLoading(false);
         });
       })
