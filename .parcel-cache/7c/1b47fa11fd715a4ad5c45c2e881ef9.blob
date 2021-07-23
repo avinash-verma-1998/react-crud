@@ -1,0 +1,77 @@
+var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+try {
+  var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+  _parcelHelpers.defineInteropFlag(exports);
+  var _react = require("react");
+  var _reactDefault = _parcelHelpers.interopDefault(_react);
+  var _reactRouter = require("react-router");
+  var _jsxFileName = "/home/avi/dev/learn/revoir_assign/src/components/UserBox.js", _s = $RefreshSig$();
+  const UserBox = ({name, email, id, active}) => {
+    _s();
+    const history = _reactRouter.useHistory();
+    const handleUserClick = () => {
+      if (!active) {
+        return;
+      }
+      history.push(`/users/${id}`);
+    };
+    return (
+      /*#__PURE__*/_reactDefault.default.createElement("div", {
+        onClick: handleUserClick,
+        className: active ? "user-icon box border-active" : "user-icon box user-inactive",
+        __self: undefined,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 13,
+          columnNumber: 5
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("p", {
+        __self: undefined,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 14,
+          columnNumber: 7
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("span", {
+        title: "send email",
+        className: "icon",
+        __self: undefined,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 15,
+          columnNumber: 9
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("a", {
+        href: `mailto:${email}`,
+        __self: undefined,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 16,
+          columnNumber: 11
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("i", {
+        className: "fas fa-paper-plane",
+        __self: undefined,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 17,
+          columnNumber: 13
+        }
+      }))), name))
+    );
+  };
+  _s(UserBox, "9cZfZ04734qoCGIctmKX7+sX6eU=", false, function () {
+    return [_reactRouter.useHistory];
+  });
+  _c = UserBox;
+  exports.default = UserBox;
+  var _c;
+  $RefreshReg$(_c, "UserBox");
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}

@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>React simple crud</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script defer="" src="d79461559c93896efca74669fee9fcac"></script>
+    <script src="cb9b45c58ca3bb655b0f35812b758755"></script>
+  </body>
+</html>
